@@ -318,7 +318,7 @@ private
     high_hand = -1
     num_winners = 0
     (0...@player_count).each do |player|
-      @top_hands[player] = get_hand_rank(@player_cards[player][0],@player_cards[player][1],@community_cards[0],@community_cards[1],@community_cards[2],@community_cards[3],@community_cards[4],@community_cards[5])
+      @top_hands[player] = get_hand_rank(@player_cards[player][0],@player_cards[player][1],@community_cards[0],@community_cards[1],@community_cards[2],@community_cards[3],@community_cards[4])
       high_hand = @top_hands[player] unless (high_hand >= 0 && high_hand >= @top_hands[player])
     end
 
