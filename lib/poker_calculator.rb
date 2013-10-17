@@ -328,7 +328,7 @@ private
 
     (0...@player_count).each do |player|
       if @top_hands[player] == high_hand
-        @outcome[player][high_hand] += 1
+        @outcome[player][num_winners] += 1
       else
         @outcome[player][0] += 1
       end
