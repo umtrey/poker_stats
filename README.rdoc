@@ -2,6 +2,6 @@
 Computes likelihood of each player winning a texas hold 'em game.
 
 == How it is used
-    % [13-10-17 13:45:23] treyair11 | ~
-    > curl -X POST -H "Content-Type: application/json" -d '{"players":{"0":{"cards":["AH","3D"],"folded":false},"1":{"cards":["AD","6D"],"folded":true},"2":{"cards":["3H","4D"],"folded":false}},"community_cards":["7D","7H","7C"]}' http://localhost:3000/stats
-    [{"player_id":0,"win_pct":0.7364341085271318,"tie_pct":0.1406423034330011},{"player_id":1,"win_pct":0.0,"tie_pct":0.0},{"player_id":2,"win_pct":0.12292358803986711,"tie_pct":0.1406423034330011}]
+    % [13-10-17 15:58:10] treyair11 | poker_stats4 [master]
+    > curl -X POST -H "Content-Type: application/json" -d '{"players":{"player1":{"cards":["AH","3D"],"folded":false},"big guy":{"cards":["AD","6D"],"folded":true},"reginald":{"cards":["3H","4D"],"folded":false}},"community_cards":["7D","7H","7C"]}' http://localhost:3000/stats
+    [{"player_id":"player1","win_pct":0.7364341085271318,"tie_pct":0.1406423034330011},{"player_id":"reginald","win_pct":0.12292358803986711,"tie_pct":0.1406423034330011},{"player_id":"big guy","win_pct":0.0,"tie_pct":0.0}]
