@@ -7,6 +7,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'unicorn'
 
+group :assets do
+  gem 'uglifier'
+  gem 'jquery-rails'
+end
+
 group :development do
   gem 'sqlite3'
 end
